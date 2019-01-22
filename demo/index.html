@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .btn {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            cursor: pointer;
+            border: 1px solid #000;
+            margin: 10px;
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
-    
+<div class="btn alert">alert</div>
+<div class="btn confirm">confirm</div>
 </body>
 <script>
-    alert('dddddddd')
+    // alert('dddddddd')
     // confirm('xxxxxxxxxxxx')
+import model from '../src/model.js'
+document.querySelector('.alert').addEventListener('click', function() {
+    // model.alert('12345')
+    model.open({
+
+    })
+})
+document.querySelector('.confirm').addEventListener('click', function() {
+    model.confirm('123456')
+})
+document
 </script>
 </html>

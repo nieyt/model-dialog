@@ -20,7 +20,7 @@ class Model{
 
     view() {
         const that = this
-        const modelMask = `<div class="mask"></div>`        
+        const modelMask = `<div class="model-mask"></div>`        
         const modelBox = document.createElement('div')
         const modelBtnBox = document.createElement('div')
         const frag = document.createDocumentFragment()
@@ -40,7 +40,7 @@ class Model{
         frag.appendChild(modelMask)
         frag.appendChild(modelBox)
         document.body.appendChild(frag)
-
+        
     }
 
     open(options) {
