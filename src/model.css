@@ -1,0 +1,7 @@
+.mask {
+    background: #000;
+    opacity: .3;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
