@@ -24,11 +24,15 @@
 </head>
 <body>
 <div class="container">
+    <div class="btn default">default</div>
     <div class="btn alert">alert</div>
     <div class="btn confirm">confirm</div>
 </div>
 <script src="../bundle/modal.js"></script>
 <script type="module">
+document.querySelector('.default').addEventListener('click', function() {
+    modal.open({ content: 'open a dialog' })
+})
 document.querySelector('.alert').addEventListener('click', function() {
     modal.alert('show alert dialog', {
         width: '400px',
@@ -37,14 +41,14 @@ document.querySelector('.alert').addEventListener('click', function() {
         title: 'alert dialog',
         skin: 'red',
         yes: () => { modal.alert('you choose yes') },
-        always: () => { console.log(1) }
+        always: () => { console.log('always') }
     })
 })
 document.querySelector('.confirm').addEventListener('click', function() {
     modal.confirm('show confirm dialog', {
         btn: ['yes', 'no'],
-        yes: () => { modal.confirm('you choose yes') },
-        no: () => { modal.confirm('you choose no') }
+        yes: () => { console.log('yes') },
+        no: () => { console.log('no') }
     })
 })
 

@@ -1,6 +1,9 @@
 # model-dialog
-a global modal dialog component with vanilla javascript
+a global modal dialog component with vanilla javascript  
 
+
+## demo
+[在线示例](https://htmlpreview.github.io/?https://github.com/nieyt/model-dialog/blob/master/demo/index.html)
 
 ## Usage
 
@@ -15,7 +18,7 @@ a global modal dialog component with vanilla javascript
 **or**
 
 ```js
-import modal from '../bundle/modal.js';
+import modal from '../bundle/modal.js'
 import '../bundle/modal.css'
 ```
 
