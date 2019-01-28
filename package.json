@@ -1,0 +1,27 @@
+{
+  "name": "model-dialog",
+  "version": "1.0.0",
+  "description": "a global modal dialog component with vanilla javascript",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nieyt/model-dialog.git"
+  },
+  "author": "nieyt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nieyt/model-dialog/issues"
+  },
+  "homepage": "https://github.com/nieyt/model-dialog#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "rollup": "^0.59.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-less": "^0.1.5"
+  }
+}

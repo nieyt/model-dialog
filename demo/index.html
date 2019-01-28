@@ -16,25 +16,38 @@
             text-align: center;
 
         }
+        .red {
+            color: red;
+        }
     </style>
+    <link rel="stylesheet" href="../bundle/modal.css">
 </head>
 <body>
-<div class="btn alert">alert</div>
-<div class="btn confirm">confirm</div>
-</body>
-<script>
-    // alert('dddddddd')
-    // confirm('xxxxxxxxxxxx')
-import model from '../src/model.js'
+<div class="container">
+    <div class="btn alert">alert</div>
+    <div class="btn confirm">confirm</div>
+</div>
+<script src="../bundle/modal.js"></script>
+<script type="module">
 document.querySelector('.alert').addEventListener('click', function() {
-    // model.alert('12345')
-    model.open({
-
+    modal.alert('show alert dialog', {
+        width: '400px',
+        height: '300px',
+        opacity: '0.4',
+        title: 'alert dialog',
+        skin: 'red',
+        yes: () => { modal.alert('you choose yes') },
+        always: () => { console.log(1) }
     })
 })
 document.querySelector('.confirm').addEventListener('click', function() {
-    model.confirm('123456')
+    modal.confirm('show confirm dialog', {
+        btn: ['yes', 'no'],
+        yes: () => { modal.confirm('you choose yes') },
+        no: () => { modal.confirm('you choose no') }
+    })
 })
-document
+
 </script>
+</body>
 </html>
