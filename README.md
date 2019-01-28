@@ -3,7 +3,7 @@ a global modal dialog component with vanilla javascript
 
 
 ## demo
-[在线示例](https://htmlpreview.github.io/?https://github.com/nieyt/model-dialog/blob/master/demo/index.html)
+[click here](https://htmlpreview.github.io/?https://github.com/nieyt/model-dialog/blob/master/demo/index.html)
 
 ## Usage
 
